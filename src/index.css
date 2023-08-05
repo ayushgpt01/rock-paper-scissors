@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+:root {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 62.5%;
+  color: #fff;
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+  --scissors-color: hsl(40, 84%, 53%);
+  --paper-color: hsl(230, 89%, 65%);
+  --rock-color: hsl(349, 70%, 56%);
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    hsl(214, 47%, 23%) 0%,
+    hsl(238, 49%, 15%) 100%
+  );
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rule-btn-wrapper {
+  align-self: flex-end;
+  margin-top: 1.8rem;
+  margin-right: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 2px solid var(--header-outline);
+  border-radius: 14px;
+  background: none;
+  outline: none;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.9rem 3rem;
+}
